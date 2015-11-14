@@ -1,6 +1,7 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
 
+
 sourceCompatibility = 1.8
 version = '1.0'
 jar {
@@ -31,3 +32,14 @@ uploadArchives {
     }
 }
 
+task myZip(type:Zip) {
+
+	destinationDir file('repos')
+	archiveName 'repos.zip'
+	from ('repos/')
+	include '*.sha1'
+	into 'repos' 
+
+}
+
+assemble.dependsOn('myZip')
