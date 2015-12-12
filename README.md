@@ -1,2 +1,6 @@
 # testgradle
-getting handsonn gradle. checking the basic 
+getting hands on gradle. checking the basic on [offical website](http://gradle.org/).
+
+
+
+
